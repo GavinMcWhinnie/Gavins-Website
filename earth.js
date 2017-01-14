@@ -77,6 +77,6 @@ for(i=0; i < 10; i++) {
             div9.style.width = '75px';
             div9.style.left = '87.5px';
             div9.style.background = 'radial-gradient(farthest-side at 50% 100%,white, 40%, blue 40%)';
-            break;
+            break;       
     }
 }
