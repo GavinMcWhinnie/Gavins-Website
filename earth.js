@@ -6,22 +6,24 @@ for(i=0; i < 10; i++) {
 }
 
 var earth = document.getElementById('planet');
+planet.style.position = 'absolute';
 planet.style.width = '250px';
 planet.style.height = '250px';
 planet.style.transform = 'Rotate(45deg)';
+planet.style.left = 'calc(50% - 125px)';
+planet.style.top = 'calc(50% - 125px)';
+
 
 for(i=0; i < 10; i++) {
     window['div' + i] = document.getElementById(i);
     window['div' + i].style.borderRadius = '25px';
     window['div' + i].style.position = 'relative';
-    window['div' + i].style.width = '100px';
     window['div' + i].style.height = '25px';
-    //window['div' + i].style.backgroundColor = 'green';
     switch(i) {
         case 0:
             div0.style.width = '75px';
             div0.style.left = '87.5px';
-            div0.style.background = 'linear-gradient(180deg, white 50%, blue 50%)';
+            div0.style.background = 'radial-gradient(farthest-side at 50% 0%, white 80%, blue 80%)';
             break;
         case 1:
             div1.style.width = '150px';
