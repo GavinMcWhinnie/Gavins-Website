@@ -1,0 +1,15 @@
+/*I don't think you can get away without style mate*/
+body{
+  margin:10px;
+}
+#content{
+  position: absolute;
+  width:calc(100% - 28px);
+  height:calc(20% - 14px);
+  top: 80%;
+  background-color: #20201d;
+  color: white;
+  font-family: sans-serif;
+  padding: 4px;
+  font-size: 3vw;
+}
