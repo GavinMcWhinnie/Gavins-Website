@@ -28,13 +28,14 @@ for(i=0; i < 10; i++) {
         case 1:
             div1.style.width = '150px';
             div1.style.left = '50px';
-            div1.style.background = 'linear-gradient(115deg, green 10%, blue 10%, blue 90%, green 90%)';
+            div1.style.background = 'linear-gradient(115deg, blue 90%, green 90%)';
             break;
         case 2:
             div2.style.width = '200px';
             div2.style.left = '25px';
-            div2.style.background = 'linear-gradient(115deg, green 20%, blue 20%, blue 60%, green 60%, green 65%,\
-            blue 65%, blue 70%, green 70%, green 80%, blue 80%, blue 90%, green 90%)';
+            div2.style.background = 'linear-gradient(65deg, green 22%, transparent 22%, transparent 70%, blue 70%, blue 75%,\
+            transparent 75%, transparent 95%, green 95%),\
+            linear-gradient(115deg, blue 60%, green 60%, green 65%, blue 65%, blue 75%, green 75%, green 85%, blue 85%)';
             break;
         case 3:
             div3.style.width = '225px';
