@@ -4,7 +4,7 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 function fade(image, faded){
   setTimeout(function(){
-    if(image!=null){
+    if(image != null){
       image.style.opacity = faded/100;
       faded -=2;
       if(faded != 0){
