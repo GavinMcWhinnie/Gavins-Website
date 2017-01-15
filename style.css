@@ -1,13 +1,13 @@
 /*I don't think you can get away without style mate*/
 body{
   margin:10px;
+  overflow: hidden;
 }
 #content{
   position: absolute;
   width:calc(100% - 28px);
-  height:calc(20% - 14px);
+  height:calc(20% - 24px);
   top: 80%;
-  background-color: #20201d;
   color: white;
   font-family: 'Vampiro One', cursive;
   padding: 4px;
