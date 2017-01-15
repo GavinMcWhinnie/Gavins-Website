@@ -4,14 +4,18 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 function fade(image, faded){
   setTimeout(function(){
-    image.style.opacity = faded/100;
-    faded -=1;
-    if(faded != 0){
-      fade(image, faded);
-    }else{
-      image.parentNode.removeChild(image);
+    if(image != null){
+      image.style.opacity = faded/100;
+      faded -=2;
+      if(faded != 0){
+        fade(image, faded);
+      }else{
+        if(image.parentNode!=null){
+          image.parentNode.removeChild(image);
+        }
+      }
     }
-  },50)
+  },200)
 }
 function placeStar(){
   var starBirth = document.createElement('img');
@@ -27,8 +31,12 @@ function placeStar(){
   fade(starBirth, faded);
 }
 function clearStars(){
+  stars = document.getElementsByClassName('star');
+  while(stars[0]){
+    stars[0].parentNode.removeChild(stars[0]);
+  }
   width = window.innerWidth;
   height = window.innerHeight;
 }
 window.addEventListener('resize', clearStars);
-placing = setInterval(placeStar, 500);
+placing = setInterval(placeStar, 1000);
