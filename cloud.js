@@ -1,3 +1,8 @@
+//This is severly bad - Iain
+//At least a was close on my first attempt
+//This is disgraceful programmin my friend
+//Dissapionting
+
 for(i=0; i < 3; i++) {
     var div = document.createElement('div');
     document.getElementById('cloud').appendChild(div);

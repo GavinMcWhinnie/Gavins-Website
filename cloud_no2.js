@@ -1,4 +1,5 @@
 //Clouds are cool - by Iain
+//This is was rubbish bye bye
 right = true;
 
 function placeCloud(cloud, x, elevation){

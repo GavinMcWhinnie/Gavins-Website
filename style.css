@@ -12,6 +12,11 @@ body{
   font-family: 'Vampiro One', cursive;
   padding: 4px;
   font-size: 7vw;
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 /*Lets style some decent clouds*/
 .cloud{
@@ -23,7 +28,7 @@ body{
   height: 10px;
   border-radius: 10px;
   position: absolute;
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.8);
 }
 div.cloud div:nth-child(1){
   width: 20px;
