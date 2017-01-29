@@ -1,5 +1,17 @@
-//Another Cloud Attempt!!!
+//Another Cloud Attempt!!! It might work YAY
+//Cloud styling is in css
+//How many clouds would you like?
+howMany = 3;
+for (var f = 0; f < howMany; f++) {
+  example = document.createElement('div');
+  example.className += 'cloud';
+  document.body.appendChild(example);
+  for (var g = 0; g < 3; g++) {
+    example.appendChild(document.createElement('div'));
+  }
+}
 
+//Animate the cloud
 class CLOUD{
   constructor(dom, x, elevation=null){
     this.dom = dom;
@@ -26,21 +38,13 @@ class CLOUD{
     this.dom.style.left = 'calc(50% + ' + (this.x-25) + 'px)';
   }
 }
-var cloud1 = document.getElementsByClassName('cloud')[0];
-cloud1 = new CLOUD(cloud1, 0);
-cloud1.mover = function(){
-    cloud1.move();
+
+clouds = [];
+doms = document.getElementsByClassName('cloud');
+for (var i = 0; i < doms.length; i++) {
+  clouds.push(new CLOUD(doms[i], (Math.random()*50)) );
+  clouds[i].mover = function(obj){
+    obj.move();
+  }
+  setInterval(clouds[i].mover, 50, clouds[i]);
 }
-setInterval(cloud1.mover, 50);
-var cloud2 = document.getElementsByClassName('cloud')[1];
-cloud2 = new CLOUD(cloud2, 0);
-cloud2.mover = function(){
-    cloud2.move();
-}
-setInterval(cloud2.mover, 50);
-var cloud3 = document.getElementsByClassName('cloud')[2];
-cloud3 = new CLOUD(cloud3, 0);
-cloud3.mover = function(){
-    cloud3.move();
-}
-setInterval(cloud3.mover, 50);
