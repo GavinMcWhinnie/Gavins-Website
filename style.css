@@ -13,3 +13,29 @@ body{
   padding: 4px;
   font-size: 7vw;
 }
+/*Lets style some decent clouds*/
+.cloud{
+  width: 50px;
+  height: 30px;
+  position: absolute;
+}
+.cloud div{
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #e6e6e6;
+}
+div.cloud div:nth-child(1){
+  width: 20px;
+  left: 15px;
+}
+div.cloud div:nth-child(2){
+  top: 10px;
+  width:40px;
+  left:5px;
+}
+div.cloud div:nth-child(3){
+  top: 20px;
+  width:50px;
+  left:0px;
+}
