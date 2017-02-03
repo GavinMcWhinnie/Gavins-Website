@@ -12,4 +12,44 @@ body{
   font-family: 'Vampiro One', cursive;
   padding: 4px;
   font-size: 7vw;
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+/*Lets style some decent clouds*/
+.cloud{
+  width: 50px;
+  height: 30px;
+  position: absolute;
+}
+.cloud div{
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: rgba(230, 230, 230, 0.8);
+}
+div.cloud div:nth-child(1){
+  width: 20px;
+  left: 15px;
+}
+div.cloud div:nth-child(2){
+  top: 10px;
+  width:40px;
+  left:5px;
+}
+div.cloud div:nth-child(3){
+  top: 20px;
+  width:50px;
+  left:0px;
+}
+
+img{
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
