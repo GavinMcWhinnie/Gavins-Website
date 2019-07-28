@@ -1,4 +1,4 @@
-# Gavins-Website
+# IESCC-website
 A website for Climate Change...
 
-I want to create a website to imform people about climate change to help stop it.
+The aim is to create a website to imform people about climate change in order to have a more sustainable future for the planet.
